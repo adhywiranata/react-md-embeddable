@@ -28,7 +28,10 @@ class App extends Component {
   render() {
     return (
       <div style={{...lightTheme, padding: 20 }}>
-        <ReactMarkdown source={this.state.source} />
+        <ReactMarkdown
+          source={this.state.source}
+          skipHTML={false}
+        />
       </div>
     );
   }
